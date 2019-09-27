@@ -19,5 +19,3 @@ const navToggle = document.getElementById('nav-toggle');
 navToggle.addEventListener("click", () => {
     blurElements(bluredElements);
 });
-
-console.log('sdsa');
