@@ -20,38 +20,46 @@
 	
 	
   <body>
-
-
-<div class="container-fluid hero-img position-fixed"><img src="images/hero-img5.png" alt="images of lighthouse and ship" class="img-fluid">
- </div>
-
-<div class="container-fluid hero-img-mobile position-fixed"><img src="images/Mobile/Group 51@2x.png" alt="images of lighthouse and ship" class="img-fluid">
- </div>	
 	  
 	
  <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light">
- 
-	<a href="index.html" class="navbar-brand"><img src="images/logo_nav.png" alt="seven+ e-Training logo"></a>
 	  
-	  
-  <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+	<input type="checkbox" class="navigation__checkbox" id="nav-toggle">
+
+	<div class="navbar-hr blur">&nbsp;</div>
+
+	<div class="blur">
+		<ul class="navbar-nav navbar-logo navbar-logo--mobile">
+			<li class="nav-item">
+				<a href="index.html" class="navbar-brand-nav"><img src="images/logo_nav.png" width="60px" alt="seven+ e-Training logo"></a>
+			</li>   
+		</ul>
+	</div>
+
+  <label for="nav-toggle" class="navbar-toggle custom-toggler">
+	<span class="navigation__label__button">&nbsp;</span>
+  </label>
   
 	  
 	<div class="container">
-    <div class="collapse navbar-collapse" id="navbarNav">
+    <div class="navbar-collapse navbar-collapse-nav-mod">
       
-      <ul class="navbar-nav">
+      <ul class="navbar-nav navbar-nav-center navbar-nav-top">
         <li class="nav-item">
           <a class="nav-link" href="what-we-do.html">What we do</a>
         </li>
         <li class="nav-item">
           <a class="nav-link nav-padding-left" href="how-we-do-it.html">How we do it</a>
         </li>   
-      </ul>
+	  </ul>
+	  
+	  <ul class="navbar-nav navbar-logo">
+        <li class="nav-item">
+			<a href="index.html" class="navbar-brand-nav"><img src="images/logo_nav.png" alt="seven+ e-Training logo"></a>
+        </li>   
+	  </ul>
       
-      <ul class="navbar-nav ml-auto">
+      <ul class="navbar-nav navbar-nav-center navbar-nav-bottom">
         <li class="nav-item">
           <a class="nav-link nav-padding-right" href="who-we-are.html">Who we are</a>
         </li>
@@ -72,10 +80,13 @@
 	  
 	  
 	  
-
-					 
+  <div class="container-fluid hero-img position-fixed"><img src="images/hero-img5.png" alt="images of lighthouse and ship" class="img-fluid">
+  </div>
+ 
+ <div class="container-fluid hero-img-mobile position-fixed"><img src="images/Mobile/Group 51@2x.png" alt="images of lighthouse and ship" class="img-fluid">
+  </div>						 
 				  			  
-  <div class="container-fluid intro-padding">
+  <div class="container-fluid page-transition intro-padding">
     <div class="container hero-text">
 					<div class="row text-left">
 						  <div class="col-lg-12 col-md-12 col-sm-12 col-xl-12"><p class="text-heading" >Navigate your crew towards</p><h1>Excellence</h1></div>
@@ -378,7 +389,6 @@
 	  
 	  
 	  
-	  
 	
 	  
 	  
@@ -389,4 +399,7 @@
 	  
 
   </body>
+
+  <script src="./main.js"></script>
+
 </html>
