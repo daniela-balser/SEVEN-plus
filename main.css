@@ -136,6 +136,10 @@ a:hover{
 	color: rgba(251,251,251,1.00);
 }
 
+.active {
+	color: rgba(0, 0, 0, 0.9);
+}
+
 .navbar-toggle {
 	display: none;
 }
@@ -1092,7 +1096,7 @@ h5 {
 		.navigation__label__button::before,
 		.navigation__label__button::after {
 			content: '';
-			position: relative;
+			position: absolute;
 			display: inline-block;
 			height: 3px;
 			background-color: rgba(41,166,216,1.00);
@@ -1103,7 +1107,11 @@ h5 {
 		}
 	
 		.navigation__label__button::before {
-			top: -1px;
+			top: 20px;
+		}
+
+		.navigation__label__button::after {
+			top: 34px;
 		}
 	
 		.navbar .navbar-toggle:hover .navigation__label__button::before{
@@ -1112,12 +1120,8 @@ h5 {
 	
 		.navigation__checkbox:checked ~ .navbar-toggle .navigation__label__button::before {
 			transform: rotate(-135deg);
-			top: 0;
+			top: 20px;
 			left: 0;
-		}
-	
-		.navigation__label__button::after {
-			top: -28px;
 		}
 	
 		.navbar .navbar-toggle:hover .navigation__label__button::after{
@@ -1126,7 +1130,7 @@ h5 {
 	
 		.navigation__checkbox:checked ~ .navbar-toggle .navigation__label__button::after {
 			transform: rotate(135deg);
-			top: -40px;
+			top: 20px;
 			left: 0;
 		}
 	
@@ -1506,7 +1510,7 @@ h5 {
 		.navigation__label__button::before,
 		.navigation__label__button::after {
 			content: '';
-			position: relative;
+			position: absolute;
 			display: inline-block;
 			height: 3px;
 			background-color: rgba(41,166,216,1.00);
@@ -1517,7 +1521,11 @@ h5 {
 		}
 	
 		.navigation__label__button::before {
-			top: -1px;
+			top: 20px;
+		}
+
+		.navigation__label__button::after {
+			top: 34px;
 		}
 	
 		.navbar .navbar-toggle:hover .navigation__label__button::before{
@@ -1526,13 +1534,10 @@ h5 {
 	
 		.navigation__checkbox:checked ~ .navbar-toggle .navigation__label__button::before {
 			transform: rotate(-135deg);
-			top: 0;
+			top: 20px;
 			left: 0;
 		}
-	
-		.navigation__label__button::after {
-			top: -28px;
-		}
+
 	
 		.navbar .navbar-toggle:hover .navigation__label__button::after{
 			background-color: white;
@@ -1540,7 +1545,7 @@ h5 {
 	
 		.navigation__checkbox:checked ~ .navbar-toggle .navigation__label__button::after {
 			transform: rotate(135deg);
-			top: -40px;
+			top: 20px;
 			left: 0;
 		}
 	
@@ -2205,7 +2210,25 @@ h1 {
 	animation: page-transition .9s ease-in;
 }
 
+.page-transition-contact {
+	animation: page-transition-contact .9s ease-in;
+}
+
+.page-transition-index {
+	animation: page-transition-index .9s ease-in;
+}
+
 @keyframes page-transition {
-    from {margin-top: 1000px;}
-    to {margin-top: 0px;}
+    from {margin-top: 1000px}
+    to {margin-top: 140px}
+}
+
+@keyframes page-transition-contact {
+    from {margin-top: 1000px}
+    to {margin-top: 40px}
+}
+
+@keyframes page-transition-index {
+    from {margin-top: 1000px}
+    to {margin-top: 0px}
 }
