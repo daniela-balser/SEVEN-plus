@@ -82,6 +82,18 @@ a:hover{
 	display: none;
 }
 
+.logo {
+	width: 88px;
+	height: 80px;
+	display: block;
+	background-image: url('./images/logo_nav.png');
+	background-size: cover;
+}
+
+.logo:hover {
+	background-image: url('./images/logo_nav-hover.png');
+}
+
 .bg-light{
 	background-image: url(images/nav-bg.png);
 	background-position: center 0%;
@@ -1052,6 +1064,11 @@ h5 {
 	
 	@media (min-width:576px) and (max-width:767px){
 	
+		.logo {
+			width: 60px;
+			height: 53px;
+		}
+
 		.navbar{
 			height: 105px;
 			display: block;;
@@ -1482,6 +1499,12 @@ h5 {
 	/*MOBILE VIEW XS*/
 	
 	@media (max-width: 575px){
+		.logo {
+			margin-left: 5vw;
+			width: 60px;
+			height: 53px;
+		}
+
 		.container-fluid.hero-img-mobile {
 			display: block !important;
 		}
