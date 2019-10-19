@@ -1291,7 +1291,7 @@ h5 {
 			background-position: center 0%;
 		}
 		.container-fluid.hero-img {
-			display: none;
+			/* display: none; */
 		
 		}
 		.container-fluid.hero-img-mobile {
@@ -1736,7 +1736,7 @@ h5 {
 		}
 		
 		.container-fluid.hero-img {
-			display: none;
+			/* display: none; */
 		}
 	
 		.container-fluid.hero-img-mobile {
