@@ -25,8 +25,10 @@ navToggle.addEventListener("click", () => {
 
 const containerFluid = document.querySelectorAll('.box');
 
+console.log('working');
+
 const heroImages = {
-    '/index': 'images/hero-img5.png',
+    '/index': '/images/hero-img5.png',
     '/what-we-do': 'images/iStock-493694230.jpg',
     '/how-we-do-it': 'images/iStock-513446326.jpg',
     '/who-we-are': 'images/iStock-939732198.jpg',
