@@ -25,31 +25,23 @@ navToggle.addEventListener("click", () => {
 
 const containerFluid = document.querySelectorAll('.box');
 
-console.log('working');
-
 const heroImages = {
-    '/index': '/images/hero-img5.png',
-    '/what-we-do': 'images/iStock-493694230.jpg',
-    '/how-we-do-it': 'images/iStock-513446326.jpg',
-    '/who-we-are': 'images/iStock-939732198.jpg',
-    '/contact-us': 'images/iStock-894464110.jpg',
-    '/benefits': 'images/iStock-641194368.jpg',
+    'index': 'images/hero-img5.png',
+    'what-we-do': 'images/iStock-493694230.jpg',
+    'how-we-do-it': 'images/iStock-513446326.jpg',
+    'who-we-are': 'images/iStock-939732198.jpg',
+    'contact-us': 'images/iStock-894464110.jpg',
+    'benefits': 'images/iStock-641194368.jpg',
 }
 
-const pageLocation = window.location.pathname.split('.')[0];
+const pageLocation = window.location.pathname.split('/');
 
 const image = new Image();
 
-console.log('image', image, 'pageLocation', pageLocation);
-
 image.onload = () => {
-    console.log('loaded');
     containerFluid.forEach(element => {
-        console.log('works');
         element.style.display = 'block';
     });
 };
 
-image.src = heroImages[pageLocation];
-
-console.log('image.src', image.src);
+image.src = heroImages[pageLocation[pageLocation.length - 1].split('.')[0]];
