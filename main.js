@@ -39,7 +39,9 @@ const pageLocation = window.location.pathname.split('.')[0];
 const image = new Image();
 
 image.onload = () => {
+    console.log('loaded');
     containerFluid.forEach(element => {
+        console.log('works');
         element.style.display = 'block';
     });
 };
