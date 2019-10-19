@@ -3,7 +3,7 @@
 body {
 	padding-top: 70px;
 	margin: 0;
-	background-color: #000529;
+	/* background-color: #000529; */
 }
 .box {
 	display: none;
@@ -2303,18 +2303,36 @@ h1 {
 }
 
 @keyframes page-transition {
-    from {margin-top: 1000px}
-    to {margin-top: 140px}
+	from {
+		margin-top: 1000px;
+		opacity: 0
+	}
+    to {
+		margin-top: 140px;
+		opacity: 1;
+	}
 }
 
 @keyframes page-transition-contact {
-    from {margin-top: 1000px}
-    to {margin-top: 40px}
+    from {
+		margin-top: 1000px;
+		opacity: 0
+	}
+    to {
+		margin-top: 40px;
+		opacity: 1;
+	}
 }
 
 @keyframes page-transition-index {
-    from {margin-top: 1000px}
-    to {margin-top: 0px}
+    from {
+		margin-top: 1000px;
+		opacity: 0
+	}
+    to {
+		margin-top: 0px;
+		opacity: 1;
+	}
 }
 
 @keyframes fade-in {
