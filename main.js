@@ -40,6 +40,8 @@ const pageLocation = window.location.pathname.split('.')[0];
 
 const image = new Image();
 
+console.log('image', image, 'pageLocation', pageLocation);
+
 image.onload = () => {
     console.log('loaded');
     containerFluid.forEach(element => {
@@ -49,3 +51,5 @@ image.onload = () => {
 };
 
 image.src = heroImages[pageLocation];
+
+console.log('image.src', image.src);
