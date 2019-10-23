@@ -36,11 +36,9 @@ const heroImages = {
 
 const pageLocation = window.location.pathname.split('/');
 
-if (!pageLocation[1]) {
-    pageLocation[1] = 'index.html';
+if (!pageLocation[pageLocation.length - 1]) {
+    pageLocation[pageLocation.length - 1] = 'index.html';
 };
-
-console.log('pageLocation', pageLocation, ' window.location.pathname',  window.location.pathname);
 
 const image = new Image();
 
