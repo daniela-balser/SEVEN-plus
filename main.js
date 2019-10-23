@@ -39,8 +39,6 @@ if (!pageLocation[1]) {
     pageLocation[1] = 'index.html';
 };
 
-console.log('pageLocation', pageLocation, ' window.location.pathname',  window.location.pathname);
-
 const image = new Image();
 
 image.onload = () => {
